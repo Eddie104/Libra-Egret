@@ -1,37 +1,34 @@
-/**
- * Created by ºè½Ü on 2015/10/26.
- */
 module libra.utils{
 
     export class MathUtil{
 
-        public static  A:number = 180 / Math.PI;
-        public static  B:number = Math.PI / 180;
+        public static A:number = 180 / Math.PI;
+        public static B:number = Math.PI / 180;
 
         /**
-         * »ñÈ¡Ä³µãµÄ¼Ğ½Ç
-         * ·µ»ØÎª»¡¶ÈÖµ
+         * Â»Ã±È¡Ä³ÂµÃ£ÂµÄ¼Ğ½Ã‡
+         * Â·ÂµÂ»Ã˜ÎªÂ»Â¡Â¶ÃˆÖµ
          */
         public static getPointAngle(x:number, y:number):number {
             return Math.atan2(y, x);
         }
 
         /**
-         * »¡¶È×ª½Ç¶È
+         * Â»Â¡Â¶Ãˆ×ªÂ½Ç¶Ãˆ
          */
         public static R2A(r:number):number {
             return Math.floor(r * MathUtil.A);
         }
 
         /**
-         * ½Ç¶È×ª»¡¶È
+         * Â½Ç¶Ãˆ×ªÂ»Â¡Â¶Ãˆ
          */
         public static A2R(a:number):number {
             return a * MathUtil.B;
         }
 
         /**
-         * ÊÇ·ñÔ¼µÈÓÚ0
+         * ÃŠÇ·Ã±Ô¼ÂµÃˆÃ“Ãš0
          * @return
          */
         public static isApproximateZero(num:number):Boolean {
@@ -66,7 +63,7 @@ module libra.utils{
         }
 
         /**
-         * ÊÇ²»ÊÇÅ¼Êı
+         * ÃŠÇ²Â»ÃŠÃ‡Å¼ÃŠÃ½
          * @param	val
          * @return
          */
@@ -75,53 +72,53 @@ module libra.utils{
         }
 
         /**
-         * ¸ù¾İÁ½µãÈ·¶¨ÕâÁ½µãÁ¬ÏßµÄ¶şÔªÒ»´Î·½³Ì y = ax + b»òÕß x = ay + b
+         * Â¸Ã¹Â¾ÃÃÂ½ÂµÃ£È·Â¶Â¨Ã•Ã¢ÃÂ½ÂµÃ£ÃÂ¬ÃßµÄ¶Ã¾ÔªÒ»Â´Î·Â½Â³ÃŒ y = ax + bÂ»Ã²Ã•ÃŸ x = ay + b
          * @param ponit1
          * @param point2
-         * @param type		Ö¸¶¨·µ»Øº¯ÊıµÄĞÎÊ½¡£Îª0Ôò¸ù¾İxÖµµÃµ½y£¬²»Îª0Ôò¸ù¾İyµÃµ½x
+         * @param type		Ö¸Â¶Â¨Â·ÂµÂ»ØºÂ¯ÃŠÃ½ÂµÃ„ÃÃÊ½Â¡Â£Îª0Ã”Ã²Â¸Ã¹Â¾ÃxÖµÂµÃµÂ½yÂ£Â¬Â²Â»Îª0Ã”Ã²Â¸Ã¹Â¾ÃyÂµÃµÂ½x
          *
-         * @return ÓÉ²ÎÊıÖĞÁ½µãÈ·¶¨µÄÖ±ÏßµÄ¶şÔªÒ»´Îº¯Êı
+         * @return Ã“É²ÃÃŠÃ½Ã–ÃÃÂ½ÂµÃ£È·Â¶Â¨ÂµÃ„Ö±ÃßµÄ¶Ã¾ÔªÒ»Â´ÎºÂ¯ÃŠÃ½
          */
         public static getLineFunc(ponit1:egret.Point, point2:egret.Point, type:number = 0):any {
             var resultFuc:any;
-            // ÏÈ¿¼ÂÇÁ½µãÔÚÒ»Ìõ´¹Ö±ÓÚ×ø±êÖáÖ±ÏßµÄÇé¿ö£¬´ËÊ±Ö±Ïß·½³ÌÎª y = a »òÕß x = a µÄĞÎÊ½
+            // ÃÈ¿Â¼Ã‚Ã‡ÃÂ½ÂµÃ£Ã”ÃšÒ»ÃŒÃµÂ´Â¹Ö±Ã“ÃšÃ—Ã¸Â±ÃªÃ–Ã¡Ö±ÃßµÃ„Ã‡Ã©Â¿ò£¬´Ã‹Ê±Ö±Ãß·Â½Â³ÃŒÎª y = a Â»Ã²Ã•ÃŸ x = a ÂµÃ„ÃÃÊ½
             if (ponit1.x == point2.x) {
                 if (type) {
                     resultFuc =	function(y:number):number { return ponit1.x; };
                 }else {
-                    throw new Error("Á½µãËùÈ·¶¨Ö±Ïß´¹Ö±ÓÚyÖá£¬²»ÄÜ¸ù¾İxÖµµÃµ½yÖµ");
+                    throw new Error("ÃÂ½ÂµÃ£Ã‹Ã¹È·Â¶Â¨Ö±Ãß´Â¹Ö±Ã“ÃšyÃ–á£¬Â²Â»Ã„Ü¸Ã¹Â¾ÃxÖµÂµÃµÂ½yÖµ");
                 }
                 return resultFuc;
             }else if(ponit1.y == point2.y) {
                 if (type) {
-                    throw new Error("Á½µãËùÈ·¶¨Ö±Ïß´¹Ö±ÓÚyÖá£¬²»ÄÜ¸ù¾İxÖµµÃµ½yÖµ");
+                    throw new Error("ÃÂ½ÂµÃ£Ã‹Ã¹È·Â¶Â¨Ö±Ãß´Â¹Ö±Ã“ÃšyÃ–á£¬Â²Â»Ã„Ü¸Ã¹Â¾ÃxÖµÂµÃµÂ½yÖµ");
                 }else {
                     resultFuc =	function(x:number):number { return ponit1.y; };
                 }
                 return resultFuc;
             }
 
-            // µ±Á½µãÈ·¶¨Ö±Ïß²»´¹Ö±ÓÚ×ø±êÖáÊ±Ö±Ïß·½³ÌÉèÎª y = ax + b
+            // ÂµÂ±ÃÂ½ÂµÃ£È·Â¶Â¨Ö±Ãß²Â»Â´Â¹Ö±Ã“ÃšÃ—Ã¸Â±ÃªÃ–Ã¡Ê±Ö±Ãß·Â½Â³ÃŒÃ‰Ã¨Îª y = ax + b
             var a:number;
-            // ¸ù¾İ
+            // Â¸Ã¹Â¾Ã
             // y1 = ax1 + b
             // y2 = ax2 + b
-            // ÉÏÏÂÁ½Ê½Ïà¼õÏûÈ¥b, µÃµ½ a = ( y1 - y2 ) / ( x1 - x2 )
+            // Ã‰ÃÃÃ‚ÃÂ½Ê½ÃÃ Â¼ÃµÃÃ»È¥b, ÂµÃµÂ½ a = ( y1 - y2 ) / ( x1 - x2 )
             a = (ponit1.y - point2.y) / (ponit1.x - point2.x);
 
             var b:number;
-            //½«aµÄÖµ´úÈëÈÎÒ»·½³ÌÊ½¼´¿ÉµÃµ½b
+            //Â½Â«aÂµÃ„ÖµÂ´ÃºÃˆÃ«ÃˆÃÒ»Â·Â½Â³ÃŒÊ½Â¼Â´Â¿ÉµÃµÂ½b
             b = ponit1.y - a * ponit1.x;
-            //°Ña,bÖµ´úÈë¼´¿ÉµÃµ½½á¹ûº¯Êı
+            //Â°Ã‘a,bÖµÂ´ÃºÃˆë¼´Â¿ÉµÃµÂ½Â½Ã¡Â¹Ã»ÂºÂ¯ÃŠÃ½
             resultFuc =	type ? function(y:number):number { return (y - b) / a; } : function(x:number):number { return a * x + b; };
             return resultFuc;
         }
 
         /**
-         * µÃµ½Á½µã¼äÁ¬ÏßµÄĞ±ÂÊ
+         * ÂµÃµÂ½ÃÂ½ÂµÃ£Â¼Ã¤ÃÂ¬ÃßµÃ„Ğ±Ã‚ÃŠ
          * @param ponit1
          * @param point2
-         * @return 			Á½µã¼äÁ¬ÏßµÄĞ±ÂÊ
+         * @return 			ÃÂ½ÂµÃ£Â¼Ã¤ÃÂ¬ÃßµÃ„Ğ±Ã‚ÃŠ
          *
          */
         public static getSlope(ponit1:egret.Point, point2:egret.Point):number {

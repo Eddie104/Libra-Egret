@@ -142,8 +142,10 @@ module libra.tick{
                     interval = libra.utils.MathUtil.max(Tick.MIN_INTERVAL, libra.utils.MathUtil.min(nextTime - this.prevTime, Tick.MAX_INTERVAL));
                     //interval *= speed;
                     //const tmp:int = getTimer();
-                    for(var r in this.tickabledList) {
-                        if (r.isTickabled()) r.tick(interval);
+                    var tickable: ITickable;
+                    for(var i in this.tickabledList) {
+                        tickable = this.tickabledList[i];
+                        if(tickable.isTickabled()) tickable.tick(interval);
                         //if (getTimer() - tmp > 10) {
                             //Logger.warn('渲染超过10毫秒,跳出循环');
                             //break;

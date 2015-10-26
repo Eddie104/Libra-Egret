@@ -1,20 +1,18 @@
-/**
- * Created by ºè½Ü on 2015/10/26.
- */
 module libra.log4H5{
     export class Logger{
 
         private _level:string;
-
+        
         /**
-         * ¿ÉÑ¡Öµ:
-         * Logger.ALL -- ËùÓĞµÈ¼¶µÄlog¶¼¿ÉÒÔ´òÓ¡³öÀ´¡£
-         * Logger.DEBUG -- ¿ÉÒÔ´òÓ¡debug¡¢info¡¢log¡¢warn¡¢error¡£
-         * Logger.INFO -- ¿ÉÒÔ´òÓ¡info¡¢log¡¢warn¡¢error¡£
-         * Logger.WARN -- ¿ÉÒÔ´òÓ¡warn¡¢error¡£
-         * Logger.ERROR -- ¿ÉÒÔ´òÓ¡error¡£
-         * Logger.OFF --
-         */
+         * è®¾ç½®å½“å‰éœ€è¦å¼€å¯çš„logçº§åˆ«ã€‚çº§åˆ«ç­‰çº§åˆ†åˆ«ä¸ºï¼šALL<DEBUG < INFO<WARN<ERROR<OFF
+         * æ­¤åŠŸèƒ½åªåœ¨ DEBUG æ¨¡å¼ä¸‹æ‰ç”Ÿæ•ˆã€‚
+         * Logger.ALL -- æ‰€æœ‰ç­‰çº§çš„logéƒ½å¯ä»¥æ‰“å°å‡ºæ¥ã€‚
+         * Logger.DEBUG-- å¯ä»¥æ‰“å°debugã€infoã€logã€warnã€errorã€‚
+         * Logger.INFO-- å¯ä»¥æ‰“å°infoã€logã€warnã€errorã€‚
+         * Logger.WARN-- å¯ä»¥æ‰“å°warnã€errorã€‚
+         * Logger.ERROR-- å¯ä»¥æ‰“å°errorã€‚
+         * Logger.OFF-- å…¨éƒ¨å…³é—­ã€‚  
+         */ 
         private static _instance:Logger;
 
         public constructor() {

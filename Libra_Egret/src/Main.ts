@@ -173,7 +173,8 @@ class Main extends egret.DisplayObjectContainer {
 //        console.log("stageWidth = ",stageW, "stageHeight = ", stageH);
         new Test(this);
         
-        
+        libra.Config.SHOW_FPS = true;
+        new libra.Config();
     }
 
     /**

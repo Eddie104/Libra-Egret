@@ -1,7 +1,3 @@
-/**
- * Created by ºè½Ü on 2015/10/26.
- */
-
 module libra.displayObject{
 
     export class JSprite extends egret.Sprite{
