@@ -1,0 +1,37 @@
+/**
+ * Created by ºè½Ü on 2015/10/26.
+ */
+
+module libra.displayObject{
+
+    export class JSprite extends egret.Sprite{
+
+        public constructor(){
+            super();
+            
+            this.once(egret.Event.ADDED_TO_STAGE,this.onAddedToStage,this)
+        }
+        
+        protected onAddedToStage(evt:egret.Event):void{
+            this.once(egret.Event.REMOVED_FROM_STAGE,this.onRemovedFromStage,this);
+        }
+        
+        protected onRemovedFromStage(evt:egret.Event):void{
+            this.once(egret.Event.ADDED_TO_STAGE,this.onAddedToStage,this);
+        }
+
+        public removeSelf():void{
+            if(this.parent){
+                this.parent.removeChild(this);
+            }
+        }
+
+        public addTo(parent:egret.DisplayObjectContainer, zorder?:number):void{
+            if(zorder){
+                parent.addChildAt(this, zorder);
+            }else{
+                parent.addChild(this);
+            }
+        }
+    }
+}

@@ -28,7 +28,8 @@
 //////////////////////////////////////////////////////////////////////////////////////
 
 class Main extends egret.DisplayObjectContainer {
-
+    
+//    import TT = libra.utils;
     /**
      * 加载进度界面
      * Process interface loading
@@ -94,8 +95,8 @@ class Main extends egret.DisplayObjectContainer {
      * preload资源组加载进度
      * Loading process of preload resource group
      */
-    private onResourceProgress(event: RES.ResourceEvent): void {
-        if(event.groupName == "preload") {
+    private onResourceProgress(event:RES.ResourceEvent):void {
+        if (event.groupName == "preload") {
             this.loadingView.setProgress(event.itemsLoaded, event.itemsTotal);
         }
     }
@@ -151,7 +152,28 @@ class Main extends egret.DisplayObjectContainer {
 
         //根据name关键字，异步获取一个json配置文件，name属性请参考resources/resource.json配置文件的内容。
         // Get asynchronously a json configuration file according to name keyword. As for the property of name please refer to the configuration file of resources/resource.json.
-        RES.getResAsync("description", this.startAnimation, this)
+//        RES.getResAsync("description", this.startAnimation, this)
+        
+//        var s: TestShape = new TestShape();
+//        this.addChild(s);
+//        
+//        s = new TestShape();
+//        this.addChild(s);
+//        s.x = stageW - s.width;
+//        
+//        s = new TestShape();
+//        this.addChild(s);
+//        s.x = stageW - s.width;
+//        s.y = stageH - s.height;
+//        
+//        s = new TestShape();
+//        this.addChild(s);
+//        s.y = stageH - s.height;
+//        
+//        console.log("stageWidth = ",stageW, "stageHeight = ", stageH);
+        new Test(this);
+        
+        
     }
 
     /**
