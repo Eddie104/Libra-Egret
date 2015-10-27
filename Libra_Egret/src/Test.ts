@@ -3,9 +3,22 @@
  */
 class Test{
     public constructor(main:Main){
-//        var tick = libra.ticker.Ticker.getInstance(main);
-//        libra.ticker.Ticker.getInstance().addItem();
-        var tick = libra.tick.Tick.getInstance(main);
-//        tick.addItem();
+//        var t:number = egret.getTimer();
+//        for(var i: number = 0;i < 900000; i++){
+//            this.t();
+//        }
+//        console.log("for 耗时:", egret.getTimer() - t);
+//        
+//        t = egret.getTimer();
+//        var j = 900000;
+//        while(--j > -1){
+//            this.t();
+//        }
+//        console.log("while 耗时:", egret.getTimer() - t);
     }
+    
+//    private t():void{
+//        var a: number = 0;
+//        a++;
+//    }
 }
