@@ -11,11 +11,18 @@ class Test{
 //        stage.addChild(obj);
         
 //        libra.utils.effectUtil.shockObj(obj);
-        console.log("22ddd2222");
+//        console.log("22ddd2222");
         
         var tf: egret.TextField = new egret.TextField();
         tf.x = 200; tf.y = 200;
-        stage.addChild(tf);
+        tf.text = "aaa";
+//        stage.addChild(tf);
+        var t: egret.RenderTexture = new egret.RenderTexture();
+        t.drawToTexture(tf);
+        var b: egret.Bitmap = new egret.Bitmap(t);
+        b.x = 200;
+        b.y = 400;
+        stage.addChild(b);
         
 //        libra.utils.effectUtil.typerEffect(tf, "的身份访问地");
         
@@ -31,6 +38,13 @@ class Test{
 //        frameExecutor.regist(this.ccc, this);
 //        
 //        frameExecutor.execute();
+        
+//        var dic: libra.collection.Dictionary = new libra.collection.Dictionary();
+//        dic.set("a", "111111111");
+//        dic.set("b", 2);
+//        
+//        console.log(dic.get("a"));
+//        console.log(dic.get("b"));
     }
     
 //    private aaa() {

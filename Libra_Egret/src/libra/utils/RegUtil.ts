@@ -24,4 +24,16 @@ module libra.utils.regUtil {
         }
         return false;
     };
+    
+//    /**
+//     * 正则初始化
+//     */
+//    export var regexEnum = {
+//        //仅中文
+//        chinese: "^[\\u4E00-\\u9FA5\\uF900-\\uFA2D]+$",
+//        //用来用户注册。匹配由数字、26个英文字母或者下划线组成的字符串
+//        username: "^\\w+$",
+//        //身份证
+//        idcard: "^[1-9]([0-9]{14}|[0-9]{17})$"	                          
+//    };
 }

@@ -14,5 +14,6 @@ module libra.utils.locationUtil {
             }   
         }
         return null;
-    }
+    };
+    
 }
