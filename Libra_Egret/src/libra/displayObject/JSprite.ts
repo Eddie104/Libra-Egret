@@ -16,7 +16,7 @@ module libra.displayObject{
         }
 
         public removeSelf():void{
-            if(this.parent){
+            if(this.parent) {
                 this.parent.removeChild(this);
             }
         }

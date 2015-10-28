@@ -30,7 +30,7 @@ module libra.tick{
         public constructor(){
             this._tickabledList = [];
             this._pause = false;
-            egret.Ticker.getInstance().register(this.onEnterFrame, this);
+            egret.Ticker.getInstance().register(this.advanceTime, this);
          }
 
         /**
@@ -93,15 +93,16 @@ module libra.tick{
          * @private
          * @param	e
          */
-        private onEnterFrame(dt:number):void {
+        private advanceTime(timeStamp:number):void {
             if (!this.pause) {
                 //dt *= speed;
                 //const tmp:int = getTimer();
                 var tickable: ITickable;
-                var i: number = this._tickabledList.length;
+                var tickabledList = this._tickabledList; 
+                var i: number = tickabledList.length;
                 while(--i > -1){
-                    tickable = this._tickabledList[i];
-                    if(tickable.isTickabled()) tickable.tick(dt);
+                    tickable = tickabledList[i];
+                    if(tickable.isTickabled()) tickable.tick(timeStamp);
                 }
             }
          }
