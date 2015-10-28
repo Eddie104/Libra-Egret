@@ -20,6 +20,11 @@
 				"isFolder":false,
 				"key":"egretIcon",
 				"name":"egretIcon"
+			},
+			{
+				"isFolder":false,
+				"key":"testPng",
+				"name":"testPng"
 			}]
 		}
 	}
