@@ -4,19 +4,11 @@ module libra.displayObject {
 	 * @author 
 	 *
 	 */
-	export class JMovieClip extends egret.DisplayObject {
+    export class JMovieClip extends egret.DisplayObject implements IDisplayObject {
 		public constructor() {
             super();
             this.once(egret.Event.ADDED_TO_STAGE, this.onAddedToStage, this)
 		}
-		
-        protected onAddedToStage(evt: egret.Event): void {
-            this.once(egret.Event.REMOVED_FROM_STAGE, this.onRemovedFromStage, this);
-        }
-
-        protected onRemovedFromStage(evt: egret.Event): void {
-            this.once(egret.Event.ADDED_TO_STAGE, this.onAddedToStage, this);
-        }
 		
         public removeSelf(): void {
             if(this.parent) {
@@ -31,5 +23,14 @@ module libra.displayObject {
                 parent.addChild(this);
             }
         }
+		
+        protected onAddedToStage(evt: egret.Event): void {
+            this.once(egret.Event.REMOVED_FROM_STAGE, this.onRemovedFromStage, this);
+        }
+
+        protected onRemovedFromStage(evt: egret.Event): void {
+            this.once(egret.Event.ADDED_TO_STAGE, this.onAddedToStage, this);
+        }
+		
 	}
 }

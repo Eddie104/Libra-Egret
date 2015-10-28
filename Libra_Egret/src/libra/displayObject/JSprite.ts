@@ -1,32 +1,33 @@
-module libra.displayObject{
+module libra.displayObject {
 
-    export class JSprite extends egret.Sprite{
+    export class JSprite extends egret.Sprite implements IDisplayObject {
 
-        public constructor(){
+        public constructor() {
             super();
-            this.once(egret.Event.ADDED_TO_STAGE,this.onAddedToStage,this)
+            this.once(egret.Event.ADDED_TO_STAGE, this.onAddedToStage, this)
         }
         
-        protected onAddedToStage(evt:egret.Event):void{
-            this.once(egret.Event.REMOVED_FROM_STAGE,this.onRemovedFromStage,this);
-        }
-        
-        protected onRemovedFromStage(evt:egret.Event):void{
-            this.once(egret.Event.ADDED_TO_STAGE,this.onAddedToStage,this);
-        }
-
-        public removeSelf():void{
+        public removeSelf(): void {
             if(this.parent) {
                 this.parent.removeChild(this);
             }
         }
 
-        public addTo(parent:egret.DisplayObjectContainer, zorder?:number):void{
-            if(zorder){
+        public addTo(parent: egret.DisplayObjectContainer, zorder?: number): void {
+            if(zorder) {
                 parent.addChildAt(this, zorder);
-            }else{
+            } else {
                 parent.addChild(this);
             }
         }
+
+        protected onAddedToStage(evt: egret.Event): void {
+            this.once(egret.Event.REMOVED_FROM_STAGE, this.onRemovedFromStage, this);
+        }
+
+        protected onRemovedFromStage(evt: egret.Event): void {
+            this.once(egret.Event.ADDED_TO_STAGE, this.onAddedToStage, this);
+        }
+
     }
 }
