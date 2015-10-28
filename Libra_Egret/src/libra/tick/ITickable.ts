@@ -8,9 +8,9 @@ module libra.tick {
     export interface ITickable{
         /**
          * 每帧调用该方法
-         * @param	interval 距离上一次被调用该方法的时间间隔，单位毫秒
+         * @param	dt 距离上一次被调用该方法的时间间隔，单位毫秒
          */
-        tick(interval:number):void;
+        tick(dt:number):void;
 
         isTickabled():boolean;
 

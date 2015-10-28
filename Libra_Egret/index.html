@@ -36,14 +36,23 @@
 
     <!--这个标签会被替换为项目中所有的 javascript 文件-->
     <!--game_files_start-->
-	<script egret="game" src="bin-debug/libra/Config.js"></script>
+	<script egret="game" src="bin-debug/libra/device.js"></script>
+	<script egret="game" src="bin-debug/libra/display.js"></script>
 	<script egret="game" src="bin-debug/libra/displayObject/JMovieClip.js"></script>
 	<script egret="game" src="bin-debug/libra/displayObject/JSprite.js"></script>
 	<script egret="game" src="bin-debug/libra/game/scene/BaseScene.js"></script>
 	<script egret="game" src="bin-debug/libra/tick/ITickable.js"></script>
 	<script egret="game" src="bin-debug/libra/tick/Tick.js"></script>
 	<script egret="game" src="bin-debug/libra/utils/ColorUtil.js"></script>
+	<script egret="game" src="bin-debug/libra/utils/DateUtil.js"></script>
+	<script egret="game" src="bin-debug/libra/utils/EffectUtil.js"></script>
+	<script egret="game" src="bin-debug/libra/utils/executor/FrameExecutor.js"></script>
+	<script egret="game" src="bin-debug/libra/utils/executor/IExecutor.js"></script>
+	<script egret="game" src="bin-debug/libra/utils/executor/QueueExecutor.js"></script>
+	<script egret="game" src="bin-debug/libra/utils/LocationProperty.js"></script>
 	<script egret="game" src="bin-debug/libra/utils/MathUtil.js"></script>
+	<script egret="game" src="bin-debug/libra/utils/RegUtil.js"></script>
+	<script egret="game" src="bin-debug/libra/utils/StringUtil.js"></script>
 	<script egret="game" src="bin-debug/LoadingUI.js"></script>
 	<script egret="game" src="bin-debug/Main.js"></script>
 	<script egret="game" src="bin-debug/Test.js"></script>
@@ -61,7 +70,7 @@
          data-content-height="960"
          data-show-paint-rect="false"
          data-multi-fingered="2"
-         data-show-fps="false" data-show-log="false"
+         data-show-fps="true" data-show-log="false"
          data-log-filter="" data-show-fps-style="x:0,y:0,size:30,textColor:0x00c200,bgAlpha:0.9">
     </div>
     <script>

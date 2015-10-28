@@ -115,13 +115,13 @@ class Main extends egret.DisplayObjectContainer {
         sky.width = stageW;
         sky.height = stageH;
 
-        var topMask:egret.Shape = new egret.Shape();
-        topMask.graphics.beginFill(0x000000, 0.5);
-        topMask.graphics.drawRect(0, 0, stageW, stageH);
-        topMask.graphics.endFill();
-        topMask.width = stageW;
-        topMask.height = stageH;
-        this.addChild(topMask);
+//        var topMask:egret.Shape = new egret.Shape();
+//        topMask.graphics.beginFill(0x000000, 0.5);
+//        topMask.graphics.drawRect(0, 0, stageW, stageH);
+//        topMask.graphics.endFill();
+//        topMask.width = stageW;
+//        topMask.height = stageH;
+//        this.addChild(topMask);
 
         var icon:egret.Bitmap = this.createBitmapByName("egretIcon");
         this.addChild(icon);
@@ -131,6 +131,10 @@ class Main extends egret.DisplayObjectContainer {
         icon.anchorOffsetY = icon.height / 2;
         icon.x = stageW / 2;
         icon.y = stageH / 2 - 60;
+        
+        icon.blendMode = egret.BlendMode.ERASE;
+        sky.mask = icon;
+        
 
         var colorLabel:egret.TextField = new egret.TextField();
         colorLabel.textColor = 0xffffff;

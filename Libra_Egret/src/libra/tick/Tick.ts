@@ -26,6 +26,7 @@ module libra.tick{
          * @private
          */
         //public var speed:Number = 1.0;
+//        private _frameCounter: number = 0;
 
         public constructor(){
             this._tickabledList = [];
@@ -105,6 +106,9 @@ module libra.tick{
                     if(tickable.isTickabled()) tickable.tick(timeStamp);
                 }
             }
+//            if(DEBUG){
+//                console.log("当前是到第几帧了呢?", ++this._frameCounter);
+//            }
          }
         
         /**
