@@ -13,18 +13,18 @@
 			"children":[
 			{
 				"isFolder":false,
-				"key":"bgImage",
-				"name":"bgImage"
-			},
-			{
-				"isFolder":false,
-				"key":"egretIcon",
-				"name":"egretIcon"
-			},
-			{
-				"isFolder":false,
 				"key":"testPng",
 				"name":"testPng"
+			},
+			{
+				"isFolder":false,
+				"key":"rockBg",
+				"name":"rockBg"
+			},
+			{
+				"isFolder":false,
+				"key":"rockBtn",
+				"name":"rockBtn"
 			}]
 		}
 	}

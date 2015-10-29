@@ -46,22 +46,16 @@ class Test{
 //        console.log(dic.get("a"));
 //        console.log(dic.get("b"));
         
-        var l: number = 3000;
-        for(var i: number = 0;i < l; i++){
-            this.createMC(stage);
-        }
-        console.log("舞台MC数量:", l);
+        this.createMC(stage);
+        console.log("112");
     }
     
     private createMC(stage:egret.Stage):void{
         var mcData: egret.MovieClipData = new egret.MovieClipDataFactory(RES.getRes("testJson"), RES.getRes("testPng")).generateMovieClipData();
         var mc: egret.MovieClip = new egret.MovieClip(mcData);
-        mc.frameRate = 12;
-//        mc.x = 200; mc.y = 200;
-        mc.x = libra.utils.mathUtil.MathUtil.getRandom(0, libra.display.stageWidth());
-        mc.y = libra.utils.mathUtil.MathUtil.getRandom(0, libra.display.stageHeight());
+        mc.x = 100; mc.y = 100;
         stage.addChild(mc);
-        mc.play(10);
+        mc.gotoAndPlay("runLeft", -1);
     }
     
 //    private aaa() {
