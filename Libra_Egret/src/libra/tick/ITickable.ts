@@ -12,8 +12,8 @@ module libra.tick {
          */
         tick(dt:number):void;
 
-        isTickabled():boolean;
+        isTickable():boolean;
 
-        setTickabled?(val:boolean):void;
+        setTickable?(val:boolean):void;
     }
 }

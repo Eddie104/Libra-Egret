@@ -68,7 +68,7 @@ module libra.utils.executor {
             }
         }
 
-        public isTickabled(): boolean {
+        public isTickable(): boolean {
             return true;
         }
 

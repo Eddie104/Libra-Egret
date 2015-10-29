@@ -103,7 +103,7 @@ module libra.tick{
                 var i: number = tickabledList.length;
                 while(--i > -1){
                     tickable = tickabledList[i];
-                    if(tickable.isTickabled()) tickable.tick(timeStamp);
+                    if(tickable.isTickable()) tickable.tick(timeStamp);
                 }
             }
 //            if(DEBUG){
