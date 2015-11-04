@@ -1,0 +1,38 @@
+{
+  "ProjectType": 0,
+  "Name": "ShopDemo",
+  "ViewType": 1,
+  "CellWidth": 32,
+  "CellHeight": 16,
+  "CellRows": 20,
+  "CellCols": 20,
+  "Path": "G:\\codeLib\\egret\\Libra-Egret\\Libra_Egret\\editor\\ShopDemo",
+  "ResList": [
+    {
+      "ResType": 0,
+      "Name": "floor01.png",
+      "Path": "G:\\codeLib\\egret\\Libra-Egret\\Libra_Egret\\resource\\assets\\shopDemo\\floor01.png",
+      "OffsetX": 55,
+      "OffsetY": 5,
+      "rows": 0,
+      "cols": 0,
+      "Underside": null
+    },
+    {
+      "ResType": 0,
+      "Name": "build01.png",
+      "Path": "G:\\codeLib\\egret\\Libra-Egret\\Libra_Egret\\resource\\assets\\shopDemo\\build01.png",
+      "OffsetX": 51,
+      "OffsetY": 24,
+      "rows": 0,
+      "cols": 0,
+      "Underside": null
+    }
+  ],
+  "LayerList": [
+    {
+      "Name": "地板层",
+      "ResList": []
+    }
+  ]
+}
