@@ -1,0 +1,158 @@
+{
+  "ProjectType": 0,
+  "Name": "ShopDemo1",
+  "ViewType": 1,
+  "CellWidth": 32,
+  "CellHeight": 16,
+  "CellRows": 40,
+  "CellCols": 40,
+  "Path": "E:\\codeLib\\egret\\Libra-Egret\\Libra_Egret\\editor\\ShopDemo1",
+  "ResList": [
+    {
+      "ResType": 0,
+      "Name": "build01.png",
+      "Path": "E:\\codeLib\\egret\\Libra-Egret\\Libra_Egret\\resource\\assets\\shopDemo\\build01.png",
+      "OffsetX": 51,
+      "OffsetY": 24,
+      "Underside": "1|1|1&1|1|1&1|1|1"
+    },
+    {
+      "ResType": 0,
+      "Name": "build02.png",
+      "Path": "E:\\codeLib\\egret\\Libra-Egret\\Libra_Egret\\resource\\assets\\shopDemo\\build02.png",
+      "OffsetX": 58,
+      "OffsetY": 33,
+      "Underside": "1|1|1&1|1|1&1|1|1"
+    },
+    {
+      "ResType": 0,
+      "Name": "build03.png",
+      "Path": "E:\\codeLib\\egret\\Libra-Egret\\Libra_Egret\\resource\\assets\\shopDemo\\build03.png",
+      "OffsetX": 55,
+      "OffsetY": 28,
+      "Underside": "1|1|1&1|1|1&1|1|1"
+    },
+    {
+      "ResType": 0,
+      "Name": "build04.png",
+      "Path": "E:\\codeLib\\egret\\Libra-Egret\\Libra_Egret\\resource\\assets\\shopDemo\\build04.png",
+      "OffsetX": 34,
+      "OffsetY": 70,
+      "Underside": "1"
+    },
+    {
+      "ResType": 0,
+      "Name": "build05.png",
+      "Path": "E:\\codeLib\\egret\\Libra-Egret\\Libra_Egret\\resource\\assets\\shopDemo\\build05.png",
+      "OffsetX": 51,
+      "OffsetY": 43,
+      "Underside": "1|1|1&1|1|1&1|1|1"
+    },
+    {
+      "ResType": 0,
+      "Name": "build06.png",
+      "Path": "E:\\codeLib\\egret\\Libra-Egret\\Libra_Egret\\resource\\assets\\shopDemo\\build06.png",
+      "OffsetX": 53,
+      "OffsetY": 24,
+      "Underside": "1|1|1&1|1|1&1|1|1"
+    }
+  ],
+  "LayerList": [
+    {
+      "Name": "家具层",
+      "ResList": [
+        {
+          "ID": 36,
+          "Name": "build01.png",
+          "Row": 4,
+          "Col": 0,
+          "IsRotate": false
+        },
+        {
+          "ID": 37,
+          "Name": "build01.png",
+          "Row": 0,
+          "Col": 8,
+          "IsRotate": false
+        },
+        {
+          "ID": 38,
+          "Name": "build01.png",
+          "Row": 16,
+          "Col": 1,
+          "IsRotate": false
+        },
+        {
+          "ID": 39,
+          "Name": "build02.png",
+          "Row": 2,
+          "Col": 4,
+          "IsRotate": false
+        },
+        {
+          "ID": 40,
+          "Name": "build03.png",
+          "Row": 16,
+          "Col": 5,
+          "IsRotate": false
+        },
+        {
+          "ID": 41,
+          "Name": "build04.png",
+          "Row": 21,
+          "Col": 6,
+          "IsRotate": false
+        },
+        {
+          "ID": 42,
+          "Name": "build05.png",
+          "Row": 16,
+          "Col": 8,
+          "IsRotate": false
+        },
+        {
+          "ID": 43,
+          "Name": "build05.png",
+          "Row": 20,
+          "Col": 8,
+          "IsRotate": false
+        },
+        {
+          "ID": 44,
+          "Name": "build05.png",
+          "Row": 24,
+          "Col": 8,
+          "IsRotate": false
+        },
+        {
+          "ID": 45,
+          "Name": "build06.png",
+          "Row": 28,
+          "Col": 8,
+          "IsRotate": false
+        },
+        {
+          "ID": 46,
+          "Name": "build06.png",
+          "Row": 32,
+          "Col": 4,
+          "IsRotate": false
+        },
+        {
+          "ID": 47,
+          "Name": "build05.png",
+          "Row": 32,
+          "Col": 8,
+          "IsRotate": false
+        },
+        {
+          "ID": 48,
+          "Name": "build06.png",
+          "Row": 36,
+          "Col": 8,
+          "IsRotate": false
+        }
+      ]
+    }
+  ]
+}
