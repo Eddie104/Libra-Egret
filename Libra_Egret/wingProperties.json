@@ -25,6 +25,16 @@
 				"isFolder":false,
 				"key":"rockBtn",
 				"name":"rockBtn"
+			},
+			{
+				"isFolder":false,
+				"key":"char_head_01",
+				"name":"char_head_01"
+			},
+			{
+				"isFolder":false,
+				"key":"body01Png",
+				"name":"body01Png"
 			}]
 		}
 	}

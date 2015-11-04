@@ -26,7 +26,7 @@
       "url": "assets/Direction_bt.png"
     },
     {
-      "name": "body01Json",
+      "name": "body01Json1",
       "type": "json",
       "url": "assets/shopDemo/body01.json"
     },
@@ -44,7 +44,7 @@
   "groups": [
     {
       "name": "preload",
-      "keys": "body01Png,body01Json"
+      "keys": "body01Png,body01Json1"
     }
   ]
 }
