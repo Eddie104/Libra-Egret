@@ -1,0 +1,41 @@
+{
+  "ViewType": 1,
+  "CellWidth": 42.0,
+  "CellHeight": 21.0,
+  "CellRows": 10,
+  "CellCols": 10,
+  "Path": "G:\\codeLib\\egret\\Libra-Egret\\Libra_Egret\\editor\\Demo",
+  "Name": "Demo",
+  "FloorTypeList": [
+    {
+      "Underside": "1",
+      "Name": "tile0015-4.png",
+      "Des": null
+    },
+    {
+      "Underside": "1",
+      "Name": "tile0018-4.png",
+      "Des": null
+    }
+  ],
+  "BuildingTypeList": [
+    {
+      "Name": "build04.png",
+      "Des": null,
+      "Underside": ""
+    },
+    {
+      "Name": "build05.png",
+      "Des": null,
+      "Underside": ""
+    }
+  ],
+  "LayerDataList": [
+    {
+      "Name": "纷纷"
+    },
+    {
+      "Name": "few发"
+    }
+  ]
+}
