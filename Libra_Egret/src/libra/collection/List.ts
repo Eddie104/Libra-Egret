@@ -50,7 +50,7 @@ module libra.collection {
          * @returns {boolean}
          */
         public addItemsAt(items: List, index: number = 0x7fffffff): boolean {
-            return libra.utils.arrayUtil.addItemsAt(this._collection, items.toArray(), index);
+            return libra.utils.arrayUtil.insertAt(this._collection, items.toArray(), index);
         }
 
         /**

@@ -10,23 +10,31 @@
     {
       "Underside": "1",
       "Name": "tile0015-4.png",
-      "Des": null
+      "Des": null,
+      "OffsetX": 21,
+      "OffsetY": 2
     },
     {
       "Underside": "1",
       "Name": "tile0018-4.png",
-      "Des": null
+      "Des": null,
+      "OffsetX": 21,
+      "OffsetY": 2
     }
   ],
   "BuildingTypeList": [
     {
       "Name": "build04.png",
       "Des": null,
+      "OffsetX": 35,
+      "OffsetY": 66,
       "Underside": ""
     },
     {
       "Name": "build05.png",
       "Des": null,
+      "OffsetX": 51,
+      "OffsetY": 42,
       "Underside": ""
     }
   ],

@@ -16,7 +16,7 @@ module libra.utils.arrayUtil {
      *    </code>
      *
      */
-    export function addItemsAt(tarArray:Array < any >, items:Array < any >, index:number = 0x7FFFFFFF):boolean {
+    export function insertAt(tarArray: Array<any>, items: Array<any>, index: number = 0x7FFFFFFF): boolean {
         if(items.length == 0) return false;
         var args: Array<any> = items.concat();
         args.splice(0, 0, index, 0);
@@ -162,4 +162,27 @@ module libra.utils.arrayUtil {
 
         return false;
     };
+    
+    export function rotate(ary: Array<any>): Array<any> {
+        var m: number = ary.length;
+        if(m > 0) {
+            var n: number = ary[0].length;
+            var result: Array<any> = [];
+            for(i = 0;i < n;i += 1) {
+                result[i] = [];
+                for(j = 0;j < m;j += 1) {
+                    result[i][j] = 0;
+                }
+            }
+            for(var i: number = 0;i < m;i += 1) {
+                for(var j: number = 0;j < n;j += 1) {
+                    //result[j][m - i - 1] = ary[i][j];
+                    result[j][i] = ary[i][j];
+                }
+            }
+            return result;
+        }
+        return null;
+    }
+		
 }

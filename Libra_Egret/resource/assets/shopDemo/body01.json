@@ -10,7 +10,8 @@
 			
 			],
 		"events":[
-			
+			{"name":"testEvent1", "frame":36},
+			{"name":"testEvent2", "frame":40}
 			],
 		"frames":[
 			

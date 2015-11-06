@@ -9,7 +9,7 @@
     class Shop {
 
         private _player: ShopPlayer;
-
+        
         public constructor(private _main: Main) {
             var bg: egret.Shape = new egret.Shape();
             var g = bg.graphics;
@@ -23,6 +23,12 @@
             this._player.x = 200;
             this._player.y = 200;
             this._player.playRun();
+            
+//            this._player.addEventListener(egret.MovieClipEvent.FRAME_LABEL, this.onFrameEvent, this);
         }
+        
+//        private onFrameEvent(evt:egret.MovieClipEvent){
+//            console.log(evt.type, evt.frameLabel);
+//        }
     }
 //}
