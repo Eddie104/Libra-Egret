@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<comments xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main"><authors><author>tangyuanfei</author><author>sunhuakai</author></authors><commentList><comment ref="A2" authorId="0"><text><r><rPr><b/><sz val="9"/><color indexed="81"/><rFont val="Tahoma"/><family val="2"/></rPr><t>tangyuanfei:</t></r><r><rPr><sz val="9"/><color indexed="81"/><rFont val="Tahoma"/><family val="2"/></rPr><t xml:space="preserve">
-0:</t></r><r><rPr><sz val="9"/><color indexed="81"/><rFont val="宋体"/><family val="3"/><charset val="134"/></rPr><t xml:space="preserve">前后端都读
-1：后端读
-2：前端读
-3：都不读
-</t></r></text></comment><comment ref="B3" authorId="1"><text><r><rPr><b/><sz val="9"/><color indexed="81"/><rFont val="Tahoma"/><family val="2"/></rPr><t>sunhuakai:</t></r><r><rPr><sz val="9"/><color indexed="81"/><rFont val="Tahoma"/><family val="2"/></rPr><t xml:space="preserve">
-1 </t></r><r><rPr><sz val="9"/><color indexed="81"/><rFont val="宋体"/><family val="3"/><charset val="134"/></rPr><t xml:space="preserve">山顶最强者喊话
-</t></r><r><rPr><sz val="9"/><color indexed="81"/><rFont val="Tahoma"/><family val="2"/></rPr><t xml:space="preserve">2 </t></r><r><rPr><sz val="9"/><color indexed="81"/><rFont val="宋体"/><family val="3"/><charset val="134"/></rPr><t>山下普通侠客喊话</t></r></text></comment></commentList></comments>

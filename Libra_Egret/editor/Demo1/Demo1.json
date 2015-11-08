@@ -1,0 +1,20 @@
+{
+  "ViewType": 1,
+  "CellWidth": 42.0,
+  "CellHeight": 21.0,
+  "CellRows": 10,
+  "CellCols": 10,
+  "Path": "E:\\codeLib\\egret\\Libra-Egret\\Libra_Egret\\editor\\Demo1",
+  "Name": "Demo1",
+  "FloorTypeList": [],
+  "BuildingTypeList": [
+    {
+      "Name": "build04.png",
+      "Des": null,
+      "OffsetX": 34,
+      "OffsetY": 66,
+      "Underside": ""
+    }
+  ],
+  "LayerDataList": []
+}
